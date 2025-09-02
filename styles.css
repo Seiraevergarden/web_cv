@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #5100ff, #4706D3);
+    text-align: center;
+}
+
+header {
+    background-color:  #3b006a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.header-content h1 {
+    font-size: 2;
+  margin-right: 190px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 750px;
+    margin-top: 10px;
+}
+
+i {
+    font-size: 2em;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.social-icons1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+#home h3 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#about {
+    background: linear-gradient(to bottom right, #5100ff, #4706D3);
+    padding: 2rem 1rem;
+    display: flex;
+    margin: 2rem 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.skills{
+    background: linear-gradient(to bottom right, #5100ff, #4706D3);
+    padding: 50px;
+    width: 700px;
+}
+
+.skills-list, .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills-list img{ 
+    background: linear-gradient(to bottom right, #5100ff, #4706D3);
+    width: 151px;
+    height: 170px;
+    border-radius: 15px;
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.project-item img {
+    padding: 2rem 1rem;
+    width:200px;
+    height:450px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color:#3b006a;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    width: 1545px;
+    height: 765px;
+    margin-bottom: 30px;
+}
+
+#contact {
+    background-color:  #3b006a;
+    height: 370px;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    margin-left:300px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:#3b006a;
+    color: #ffffff;
+    margin-right: 35px;
+}
+
+footer {
+    background-color: #3b006a;
+    padding: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4706D3;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #4b00e0;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 20px; 
+    margin-inline: 10px;
+}
+    
+button {
+    padding: 10px 20px;
+    border: 1px solid #4706D3;
+    border-radius: 5px;
+    background-color: #4706D3;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+    
+button:hover {
+    background-color: #4b00e0;
+    transform: scale(1.10);
+}
+    
+@media screen and (max-width: 764px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+        margin-right: -30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        
+    }
+
+    .social-icons{
+        flex-direction: row;
+        justify-content: center;
+        display: flexbox;
+        margin-right: -30px;
+    }
+
+    .social-icons1 {
+        flex-direction: row;
+        justify-content: center;
+        display: flexbox;
+        margin: 0;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #about {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 0;
+    }   
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills, .project-item {
+        padding: 20px;
+    }
+
+    .skills-list img, .project-item img {
+        width: 40%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .project-item {
+        width: auto;
+        height: auto;
+    }
+
+    form input {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    form textarea {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    form button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        width: 85%;
+        padding: 15px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+:root {
+    --bg-color: #3b006a; 
+    --text-color: #ffffff;
+    --bg-color1:#3b006a;
+    --bg-color2:#4706D3;
+    --bg-color3:#000000;
+    --bg-gradient:linear-gradient(to bottom right, #5100ff, #4706D3);
+  }
+  
+  body.dark {
+    --bg-color: #181818; 
+    --text-color: #c6c6c6;
+    --bg-color1:#1c0032;
+    --bg-color2:#2a037e;
+    --bg-color3:#c6c6c6;
+    --bg-gradient:#181818;
+  }
+  
+  body.light {
+    --bg-color: #edeaea;
+    --text-color: #000000;
+    --bg-color1:#000080;
+    --text-color1:#cbcaca;
+    --bg-color2:#202099;
+    --bg-color3:#000000;
+    --bg-gradient:#edeaea;
+  }
+  
+  header,.header-content,nav ul li a{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  }
+  #skills,#contact,footer{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  }
+  #home,#home h2,#home h3,.about,.about-content{
+  background-color: var(--bg-gradient);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  }
+  #projects{
+  background-color: var(--bg-gradient);
+  color: var(--text-color1);
+  transition: background-color 0.3s, color 0.3s;
+  }
+  .project-item{
+  background-color: var(--bg-color1);
+  color: var(--text-color1);
+  transition: background-color 0.3s, color 0.3s;
+  }
+  .btn{
+  background-color: var(--bg-color2);
+  color: var(--text-color 1);
+  transition: background-color 0.3s, color 0.3s;
+  } 
+  i{
+  color: var(--bg-color3);
+  transition: background-color 0.3s, color 0.3s;
+    } 
+  
